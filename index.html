@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    let song = 'Anna Sun'
+    let food = 'sushi'
+    let game = 'Suikoden 2'
+    let movie = 'The Dark Knight'
+    let correct = 0
+
+    let question = prompt(`What's your favorite movie?`)
+    if (movie === question) {
+      console.log('That is a classic!')
+      correct++
+    } else {
+      alert(`I give that a thumbs down.`)
+    } 
+
+    question = prompt(`What's your favorite song?`)
+    if (song === question) {
+      console.log(`I could listen to that all day!`)
+      correct++
+    } else {
+      alert (`We all need something to sleep to.`)
+    
+    }
+
+    question = prompt(`What's your favorite food?`)
+    if (food === question) {
+      console.log(`I could eat that everyday!`)
+      correct++
+    } else {alert(`I wouldn't feed that to my dog.`)
+   
+  }
+
+    question = prompt(`What's your favorite game?`)
+    if (game === question) {
+      console.log(`You know about this too?!`)
+      correct++
+    } else {alert(`I'd rather play with weeds`)
+   
+  }
+
+  console.log(`We both like ${correct} of the same things!`)
+  if (correct === 4) {
+    alert ('We are now best friends forever!')
+  }
+
+  </script>
+</body>
+</html>
